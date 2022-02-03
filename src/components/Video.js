@@ -1,17 +1,18 @@
-import React from 'react';
+import React from "react";
 
-function Video() {
+function Video({ title, embedURL }) {
   return (
     <div>
-        <iframe
+      <iframe
         width="919"
         height="525"
-        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        src={embedURL}
         frameBorder="0"
         allowFullScreen
-        title="Thinking in React"
-        />
-    </div>);
+        title={title}
+      />
+    </div>
+  );
 }
 
 export default Video;
