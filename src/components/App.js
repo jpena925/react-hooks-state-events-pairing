@@ -13,6 +13,8 @@ function App() {
         title={video.title}
         views={video.views}
         createdAt={video.createdAt}
+        upvotes={video.upvotes}
+        downvotes={video.downvotes}
       />
     </div>
   );
