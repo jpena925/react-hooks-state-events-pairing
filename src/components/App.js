@@ -2,6 +2,7 @@ import React from "react";
 import video from "../data/video.js";
 import Video from "./Video";
 import VideoContent from "./VideoContent.js";
+import HideButton from "./HideButton.js";
 
 function App() {
   // console.log("Here's your data:", video);
@@ -16,6 +17,7 @@ function App() {
         upvotes={video.upvotes}
         downvotes={video.downvotes}
       />
+      <HideButton />
     </div>
   );
 }
